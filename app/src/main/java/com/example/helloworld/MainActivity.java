@@ -2,6 +2,7 @@ package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -20,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnMainClick(View view) {
         this.tvMain.setText(R.string.congrats);
+    }
+
+    public void onButtonClick(View view) {
+        this.tvMain.setTextColor(Color.GREEN);
     }
 }
